@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Products</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+           <img src="images/logo (1).png" alt="">
+         <!-- <i class='bx bxl-c-plus-plus'></i> -->
+         <!-- <span class="logo_name">Fresh2GO</span> -->
+        </div>
+         <ul class="nav-links">
+           <li>
+             <a href="index.html" class="active">
+               <i class='bx bx-grid-alt' ></i>
+               <span class="links_name">Dashboard</span>
+             </a>
+           </li>
+           <li>
+             <a href="products.html">
+               <i class='bx bx-box' ></i>
+               <span class="links_name">Products</span>
+             </a>
+           </li>
+           <li>
+             <a href="duplicate.html">
+               <i class='bx bx-list-ul' ></i>
+               <span class="links_name">Orders</span>
+             </a>
+           </li>
+           <li>
+             <a href="">
+               <i class='bx bx-pie-chart-alt-2' ></i>
+               <span class="links_name">Customers</span>
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <i class='bx bx-cog' ></i>
+               <span class="links_name">Setting</span>
+             </a>
+           </li>
+           <li class="log_out">
+             <a href="#">
+             <i class='bx bx-log-out'></i>
+             <span class="links_name">Log out</span>
+             </a>
+           </li>
+         </ul>
+     </div>
+     <section class="home-section">
+       <nav>
+         <div class="sidebar-button">
+           <img src="" alt="">
+           <i class='bx bx-menu sidebarBtn'></i>
+           <span class="dashboard">Fresh2Go</span>
+         </div>
+         <div class="search-box">
+           <input type="text" placeholder="Search...">
+           <i class='bx bx-search' ></i>
+         </div>
+         <div class="profile-details">
+           <img src="images/woman.jpg" alt="">
+           <span class="admin_name">michaela</span>
+           <i class='bx bx-chevron-down' ></i>
+         </div>
+       </nav>
+      
+    
+      
+<section class="addition">
+<h1>Admin Dashboard</h1>
+  <div class="products">
+    <h2>Products</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Status</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bananas</td>
+          <td class="pimg"><img src="images/bananas.jpeg" alt=""></td>
+          <td>50ksh</td>
+          <td>10</td>
+          <td>In Stock</td>
+          <td>
+            <button class="edit-product">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Cabbage</td>
+          <td class="pimg" ><img src="images/cabbage.jpeg" alt=""></td>
+          <td>100ksh</td>
+          <td>5</td>
+          <td>Out of Stock</td>
+          <td>
+            <button class="edit-product">Edit</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Tomatoes</td>
+          <td class="pimg" ><img src="images/tomatoes.jpeg" alt=""></td>
+          <td>50ksh</td>
+          <td>20</td>
+          <td>In Stock</td>
+          <td>
+            <button class="edit-product">Edit</button>
+          </td>
+        </tr>
+        <tr>
+            <td>Tomatoes</td>
+            <td class="pimg" ><img src="images/tomatoes.jpeg" alt=""></td>
+            <td>50ksh</td>
+            <td>20</td>
+            <td>In Stock</td>
+            <td>
+              <button class="edit-product">Edit</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Tomatoes</td>
+            <td class="pimg" ><img src="images/tomatoes.jpeg" alt=""></td>
+            <td>50ksh</td>
+            <td>20</td>
+            <td>In Stock</td>
+            <td>
+              <button class="edit-product">Edit</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="actions">
+    <h2>Actions</h2>
+    <button>Add Product</button>
+    <button>Delete Product</button>
+  </div>
+</section>
+
+
+<script>
+    let sidebar = document.querySelector(".sidebar");
+ let sidebarBtn = document.querySelector(".sidebarBtn");
+ sidebarBtn.onclick = function() {
+   sidebar.classList.toggle("active");
+   if(sidebar.classList.contains("active")){
+   sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+ }else
+   sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+ }
+  </script>
+</body>
+</html>
